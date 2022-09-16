@@ -10,6 +10,7 @@ const Storage = multer.diskStorage(
             cb(null, file.originalname);
         },
         // 즉, image file이 저장될 저장소와 파일이름 설정해놓음. 
+        // image스키마 변경 후 filename설정
     }
 )
 const upload = multer({ storage : Storage }); // 이거뒤에 .single을 사용해서 router middleware로 넣어줄거임 
