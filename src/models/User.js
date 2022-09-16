@@ -1,5 +1,7 @@
 'use strict';
 const mongoose = require('mongoose');
+const bcrypt = require('bcrypt');
+const saltRounds = 10;
 // const imageSchema = new mongoose.Schema(
 //     {
 //         image : {
@@ -30,5 +32,23 @@ const userSchema = new mongoose.Schema(
         }
     }
 )
+
+// 회원가입 전에 bcrypt모듈을 사용해서 plain pw -> hashed pw로 만들고 저장
+// 이후 로그인 할 때 bcrypt.compare를 사용해서 해독한 후 로그인
+userSchema.pre('save', function(next){
+    const user = this
+  
+    if(user.isModified('password')) {
+      bcrypt.genSalt(saltRounds, function(err, salt){
+        if (err) return next(err)
+        bcrypt.hash(user.password, salt, function(err, hash){
+          if (err) return next(err)
+          user.password = hash
+          next()
+      })
+    })
+    }
+    
+  })
 
 module.exports = mongoose.model('User', userSchema);

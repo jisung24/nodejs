@@ -22,5 +22,13 @@ module.exports = () => {
         }
     })
 
+    // 3. 로그인 
+    router.get('/local/index', async(req,res) => {
+        try{
+            res.render('login.ejs');
+        }catch(err){
+            console.log(err);
+        }
+    })
     return router;
 }
