@@ -30,5 +30,10 @@ module.exports = () => {
             console.log(err);
         }
     })
+
+    // 4. 아이템 페이지
+    router.get('/item/index', async(req,res) => {
+        res.render('./admin/newItem.ejs');
+    })
     return router;
 }

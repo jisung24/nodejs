@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 class="title">아이템 생성</h1>
+    <form action="/items" method="post">
+        <p>
+            <label for="img">이미지</label>
+            <input type="file" name="img" id="img">
+        </p>
+        <p>
+            <label for="itemType">종류</label>
+            <input type="text" name="itemType" id="itemType">
+        </p>
+        <p>
+            <label for="price">가격</label>
+            <input type="text" name="price" id="price">
+        </p>
+        <p>
+            <input type="submit" value="create">
+        </p>
+    </form>
+</body>
+</html>

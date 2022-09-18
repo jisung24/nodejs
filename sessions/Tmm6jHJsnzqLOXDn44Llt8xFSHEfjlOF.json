@@ -1,1 +1,17 @@
-{"cookie":{"originalMaxAge":null,"expires":null,"httpOnly":true,"path":"/"},"passport":{"user":{"img":{"data":{"type":"Buffer","data":[105,109,103,49,46,112,110,103]},"contentType":"image/png"},"_id":"6323dfdad5e9286312e4f3da","email":"jisung4012@naver.com","password":"$2b$10$LPTOP8seKBOh7RyVw17dOeXEsK3jVvYpQUeHBO65lND0NoVG61106","__v":0}},"__lastAccess":1663295577581}
+{
+    "cookie" : {
+    "originalMaxAge":null,"expires":null,"httpOnly":true,"path":"/"
+        },
+    "passport" : {
+        "user" : {
+            "img" : 
+                {
+                    "data" :
+                        {
+                            "type" : "Buffer",
+                            "data" : [105,109,103,49,46,112,110,103]
+                        },
+                    "contentType" : "image/png"
+                },
+                "_id":"6323dfdad5e9286312e4f3da","email":"jisung4012@naver.com","password":"$2b$10$LPTOP8seKBOh7RyVw17dOeXEsK3jVvYpQUeHBO65lND0NoVG61106","__v":0}
+        },"__lastAccess":1663295577581}

@@ -5,6 +5,8 @@ const session = require('./src/auth/session.js');
 const passport = require('./src/auth/passport/local.js');
 const indexRouter = require('./src/routes/indexRouter.js');
 const authRouter = require('./src/routes/authRouter.js');
+const itemRouter = require('./src/routes/itemRouter.js');
+
 const app = express(); //express함수의 return값을 app으로 사용한다. (application객체를 return하기 때문에 줄여서 app)
 
 app.set('views','./src/views'); // views를 static파일화 시킨다. 
@@ -19,5 +21,6 @@ passport(app);
 // router middleware
 app.use('/', indexRouter()); // /로 들어오는 모든 경로는 indexRouter가 처리함.
 app.use('/api/auth', authRouter(passport(app)));
+app.use('/items', itemRouter());
 
 module.exports = app; 
