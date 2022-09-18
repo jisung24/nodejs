@@ -32,7 +32,7 @@
             - 관심상품 => `likes[String]` (GET : /like/likes-list)
             - 구매버튼 => (post : /purchase/index ) => 구매한 노트북에 추가! 
             - 신고list => ( GET : /repost/report-list )
-            
+
 
 - ## admin(db data 수정 삭제.. 등 관리역할)
     - 노트북 수정, 삭제, 생성 
@@ -54,3 +54,8 @@
 - image schema를 어떻게 작성을 해줘야하는지 살짝 걱정.
 - multer.diskStorage라는 multer함수의 프로퍼티객체 사용. 
 - img schema의 data속성에 req.file.filename으로 파일이름추가. 
+
+# 2022-09-18
+
+## 저녁
+- rest api에 대해서 공부하고 project 기능과 그에 따른 rest api를 설계함.
