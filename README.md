@@ -43,6 +43,21 @@
         - 수정(PUT : /users )
         - 삭제(DELETE : /users )
 
+## `사용 기술`
+- 프론트엔드 
+    - html 
+        - 시멘틱 태그 사용
+        - 전반적 태그 이해
+    - css 
+        - grid, flex layout
+        - css 모듈화
+        - Media query 반응형 웹
+        - animation, transition
+    - javascript
+
+- 백엔드 
+    - 노드JS
+        - 다양한 모듈을 이용해서 express서버 구현하기
 # 2022-09-16
 
 ## 새벽
