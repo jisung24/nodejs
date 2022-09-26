@@ -12,6 +12,9 @@ module.exports = () => {
     router.get('/:id', async(req,res) => {
         const { id } = req.params;
         console.log(`id가 ${id}인 노트북`);
+        res.render('items.ejs',{
+            number : id,
+        })
     })
 
     // 2. 노트북 전체검색 페이지 (GET : /items/all)
