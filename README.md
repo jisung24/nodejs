@@ -88,3 +88,13 @@
 
 ## `새벽`
 - fetch함수를 이용하여 crud를 구현할 생각. 
+
+
+# 2022-09-26
+
+## fetch API
+- fetch를 이용하여 item검색 기능을 만듦. 
+- /items/:id 로 검색(`id는 req.params에 담긴다!`)
+
+## front(media query)
+- 프론트엔드는 `grid`레이아웃을 이용한 `반응형`제작
