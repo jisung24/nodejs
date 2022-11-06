@@ -220,3 +220,4 @@
             - 503 : Service Unvailable : 서버 점검. 
             - 504 : Gateway Timeout : 서버 게이트웨이 문제생김 
             - 505 : HTTP Version Not Supported : 해당 http버젼에서는 지원되지 않는 요청임을 알림. 
+        - 오늘 에러처리 + express와 app의 차이점 Router함수 등을 자세히 공부함.!
